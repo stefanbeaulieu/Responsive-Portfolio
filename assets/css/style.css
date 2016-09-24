@@ -8,6 +8,8 @@ body {
 	background-image: url("../images/background_pattern.gif");
 	font-family: 'Georgia', 'Times', 'Times New Roman', serif;
 	color: #777;
+	max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -26,7 +28,6 @@ header {
 
 footer {
 	background-color: #666;
-
 	text-align: center;
 	border-top: 5px solid #4aaaa5;
 	clear: both;
@@ -93,13 +94,19 @@ LINKS
 *********************************/
 
 .main_menu {
-	padding: 26px 0 0 500px;
+	padding: 26px 0 0 460px;
 	font-size: .85em;
 	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 
 li {
 	display: inline-block;
+	border-right: 1px solid black;
+	padding: 0 20px;
+}
+
+.no-border {
+	border: 0;
 }
 
 a {
@@ -437,7 +444,7 @@ RESPONSIVE DESIGN - 980px
 	header {
 		padding-left: 100px;
 		margin: 0;
-		background-color: #ddd;
+		background-color: #fff;
 	}
 
 	.main_menu {
@@ -481,7 +488,7 @@ RESPONSIVE DESIGN - 980px
 	}
 
 	/*********************************
-	IMAGES
+	980 IMAGES
 	*********************************/
 
 	img {
@@ -502,12 +509,9 @@ RESPONSIVE DESIGN - 980px
 		border-radius: 20%;
 	}
 
-	p {
-		clear: both;
-	}
-	#headshot-placeholder {
+	.headshot-placeholder {
 		margin: auto;
-		width: 80%;
+		width: 90%;
 	}
 }
 
@@ -520,37 +524,170 @@ RESPONSIVE DESIGN - MEDIUM
 @media only screen and (max-width: 768px) {
 
 
-		/*********************************
-		HEADER
-		*********************************/
+	/*********************************
+	768 HEADER
+	*********************************/
 
-		header {
-			padding-left: 100px;
-			margin: 0;
-			width: 92%;
-			background-color: red;
-		}
-
-		.main_menu {
-			padding: 26px 0 0 400px;
-			height: 100%;
-			font-size: .85em;
-			font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
-		}
-
-}
-
-@media only screen and (max-width: 640px) {
 	header {
-		padding-left: 100px;
+		width: 100%;
+		padding-left: 10px;
 		margin: 0;
-		width: 92%;
+		background-color: #ddd;
 	}
 
 	.main_menu {
-		padding: 26px 0 20px 10px;
-		height: 100%;
+		padding: 26px 0 0 120px;
 		font-size: .85em;
 		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	}
+
+
+
+	/*********************************
+	768 BODY
+	*********************************/
+
+	.container {
+		padding-left: 10px;
+	}
+
+	.main-bio, .right-menu {
+		float: left;
+		margin-top: 20px;
+	}
+
+	.main-bio {
+		background-color: #fff;
+		border: 2px solid #ddd;
+		padding: 0 20px 20px 20px;
+		width: 560px;
+		margin: 20px 0 10px 0;
+		line-height: 150%;
+		text-align: justify;
+	}
+
+	.right-menu {
+		width: 560px;
+		background-color: #fff;
+		border: 2px solid #ddd;
+		margin: 20px 0 100px 10px;
+		padding: 0 20px 20px 20px;
+	}
+
+	/*********************************
+	768 IMAGES
+	*********************************/
+
+	img {
+		max-width: 100%;
+	}
+
+	.thumb {
+		width: 50px;
+		height: 50px;
+		padding: 0 5px 10px 5px;
+	}
+
+	#headshot {
+		width: 200px;
+		height: 200px;
+		padding: 0 20px 10px 10px;
+		border-radius: 20%;
+		float: left;
+	}
+
+	.headshot-placeholder {
+		float: left;
+		margin: 0;
+		width: 230px;
+	}
+
+}
+
+
+
+/*********************************
+RESPONSIVE DESIGN - 640px
+*********************************/
+
+@media only screen and (max-width: 640px) {
+
+
+
+	/*********************************
+	640 HEADER
+	*********************************/
+
+	.main_heading {
+		background-color: #fff;
+		text-align: center;
+		padding: 0;
+		width: 100%;
+		font-size: 1.5em;
+		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	}
+
+	.main_menu {
+		background-color: #fff;
+		text-align: center;
+		padding: 20px 0px;
+		width: 100%;
+		font-size: .85em;
+		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	}
+
+	.main_menu li {
+		padding: 0px 25px;
+		font-size: 1.25em;
+		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+	}
+
+	.heading{
+		width: 100%;
+	}
+
+
+
+	/*********************************
+	640 BODY
+	*********************************/
+
+	.container {
+		padding-left: 10px;
+	}
+
+	.main-bio, .right-menu {
+		margin-top: 20px;
+	}
+
+	.main-bio {
+		background-color: #fff;
+		border: 2px solid #ddd;
+		padding: 0 20px 20px 20px;
+		width: 360px;
+		margin: 20px 0 10px 0;
+		line-height: 150%;
+		text-align: justify;
+	}
+
+	.right-menu {
+		width: 260px;
+		background-color: #fff;
+		border: 2px solid #ddd;
+		margin: 20px 0 100px 10px;
+		padding: 0 20px 20px 20px;
+	}
+
+	#headshot {
+		width: 200px;
+		height: 200px;
+		float: left;
+		padding: 0 20px 10px 10px;
+		border-radius: 20%;
+	}
+
+	.headshot-placeholder {
+		margin: auto;
+		width: 100%;
 	}
 }
