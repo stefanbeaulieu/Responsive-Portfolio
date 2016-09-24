@@ -387,7 +387,7 @@ RESPONSIVE DESIGN - max
 	}
 
 	.main_menu {
-		padding: 26px 0 0 400px;
+		padding: 26px 0 0 380px;
 		height: 100%;
 		font-size: .85em;
 		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -448,7 +448,7 @@ RESPONSIVE DESIGN - 980px
 	}
 
 	.main_menu {
-		padding: 26px 0 0 180px;
+		padding: 26px 0 0 110px;
 		height: 100%;
 		font-size: .85em;
 		font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
@@ -532,7 +532,7 @@ RESPONSIVE DESIGN - MEDIUM
 		width: 100%;
 		padding-left: 10px;
 		margin: 0;
-		background-color: #ddd;
+		background-color: #fff;
 	}
 
 	.main_menu {
@@ -548,6 +548,7 @@ RESPONSIVE DESIGN - MEDIUM
 	*********************************/
 
 	.container {
+		width: auto;
 		padding-left: 10px;
 	}
 
@@ -612,8 +613,6 @@ RESPONSIVE DESIGN - 640px
 
 @media only screen and (max-width: 640px) {
 
-
-
 	/*********************************
 	640 HEADER
 	*********************************/
@@ -644,6 +643,8 @@ RESPONSIVE DESIGN - 640px
 
 	.heading{
 		width: 100%;
+		padding: 20px 0;
+
 	}
 
 
@@ -664,10 +665,14 @@ RESPONSIVE DESIGN - 640px
 		background-color: #fff;
 		border: 2px solid #ddd;
 		padding: 0 20px 20px 20px;
-		width: 360px;
+		width: 320px;
 		margin: 20px 0 10px 0;
 		line-height: 150%;
 		text-align: justify;
+	}
+
+	.bio {
+		clear: both;
 	}
 
 	.right-menu {
@@ -681,13 +686,11 @@ RESPONSIVE DESIGN - 640px
 	#headshot {
 		width: 200px;
 		height: 200px;
-		float: left;
 		padding: 0 20px 10px 10px;
 		border-radius: 20%;
 	}
 
 	.headshot-placeholder {
-		margin: auto;
-		width: 100%;
+		padding-left: 47px;
 	}
 }
