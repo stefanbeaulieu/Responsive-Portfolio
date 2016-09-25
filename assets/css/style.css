@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /*********************************
 HEADER AND FOOTER
 *********************************/
@@ -93,7 +94,7 @@ LINKS
 *********************************/
 
 .main_menu {
-	padding: 26px 0 0 460px;
+	padding: 26px 0 0 530px;
 	font-size: .85em;
 	font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
 }
