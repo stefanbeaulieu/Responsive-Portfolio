@@ -207,13 +207,13 @@ PAGE: PORTFOLIO
 
 #gallery li {
 	float: left;
-	width: 45%;
+	width: 38%;
 	margin: 2.5%;
+	border: 0;
 }
 
 .boston_tag {
-	position: absolute;
-	top: 310px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -224,8 +224,7 @@ PAGE: PORTFOLIO
 }
 
 .nyc_tag {
-	position: absolute;
-	top: 310px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -236,8 +235,7 @@ PAGE: PORTFOLIO
 }
 
 .autumn_tag {
-	position: absolute;
-	top: 610px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -248,8 +246,7 @@ PAGE: PORTFOLIO
 }
 
 .sunset_tag {
-	position: absolute;
-	top: 610px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -260,8 +257,7 @@ PAGE: PORTFOLIO
 }
 
 .monuments_tag {
-	position: absolute;
-	top: 890px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -272,8 +268,7 @@ PAGE: PORTFOLIO
 }
 
 .harambe_tag {
-	position: absolute;
-	top: 890px;
+	position: relative;
 	background-color: #4aaaa5;
 	width: 293px;
 	height: 30px;
@@ -283,6 +278,10 @@ PAGE: PORTFOLIO
 	font-weight: bold;
 }
 
+.box-1 {
+  top: -50px;
+	width: auto;
+}
 
 
 /*********************************
@@ -676,7 +675,7 @@ RESPONSIVE DESIGN - 640px
 	}
 
 	.right-menu {
-		width: 260px;
+		width: 320px;
 		background-color: #fff;
 		border: 2px solid #ddd;
 		margin: 20px 0 100px 10px;
